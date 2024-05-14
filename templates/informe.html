@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generar Informe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <h1 class="text-center mt-5 mb-5 text-primary">Generar Informe</h1>
+
+
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end container">
+        <a href="/" class="btn btn-primary mb-3 mt-4 ">Ir al menu</a>
+      </div>
+    <div class="container">
+        <div class="card shadow">
+            <div class="card-body">
+                <form action="/informe" method="post" enctype="multipart/form-data" class="col">
+                    <div class="container text-center col-6">
+                        
+                        <div class="row align-items-start">
+                            <label for="name" class="col" >Mes:</label>
+                            <select class="form-select col mb-2" name = "mes" aria-label="Default select example">
+                                <option selected>Seleccione un valor</option>
+                                <option value="1">ENERO</option>
+                                <option value="2">FEBRERO</option>
+                                <option value="3">MARZO</option>
+                                <option value="4">ABRIL</option>
+                                <option value="5">MAYO</option>
+                                <option value="6">JUNIO</option>
+                                <option value="7">JULIO</option>
+                                <option value="8">AGOSTO</option>
+                                <option value="9">SEPTIEMBRE</option>
+                                <option value="10">OCTUBRE</option>
+                                <option value="11">NOVIEMBRE</option>
+                                <option value="12">DICIEMBRE</option>
+                              </select>
+                        </div>
+                        <div class="row align-items-start">
+                            <label for="name" class="col" >Año:</label>
+                            <select class="form-select col mb-2" name = "anio" aria-label="Default select example">
+                                <option selected>Seleccione un valor</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                                
+                              </select>
+                        </div>
+                        
+                        <div class="row align-items-start">
+                            <label for="name" class="col">Nº Correlativo Form:</label>
+                            <input type="text" id="correlativo" name="correlativo" class="col form-control mb-2"/>
+                        </div>
+                        
+                        <div class="row align-items-start">
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                                <input type="submit" value="Generar Informe" class="btn btn-primary">
+                            </div>
+                        </div>
+                    </div>
+    
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

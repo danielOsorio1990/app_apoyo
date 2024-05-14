@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generar Kardex</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <h1 class="text-center mt-5 mb-5 text-primary">Generar Kardex</h1>
+
+
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end container">
+        <a href="/" class="btn btn-primary mb-3 mt-4 ">Ir al menu</a>
+      </div>
+    <div class="container">
+        <div class="card shadow">
+            <div class="card-body">
+                <form action="/generar_kardex" method="post" enctype="multipart/form-data" class="col">
+                    <div class="container text-center col-6">
+                        <div class="row align-items-start">
+                            <input type="file" name="archivo" class="form-control mb-2">
+                        </div>
+                        <div class="row align-items-start">
+                            <label for="name" class="col" >fecha de inicio:</label>
+                            <input type="date" id="fecha_inicio" name="fecha_inicio" class="col form-control mb-2" />
+                        </div>
+                        <div class="row align-items-start">
+                            <label for="name" class="col">fecha final:</label>
+                            <input type="date" id="fecha_fin" name="fecha_fin" class="col form-control mb-2" />
+                        </div>
+                        <div class="row align-items-start">
+                            <label for="name" class="col">altura kardex cedula:</label>
+                            <input type="text" id="alt_cedula" name="alt_cedula" class="col form-control mb-2"/>
+                        </div>
+                        <div class="row align-items-start">
+                            <label for="name" class="col">altura kardex lamina:</label>
+                            <input type="text" id="alt_lamina" name="alt_lamina" class="col form-control mb-2"/>
+                        </div>
+                        <div class="row align-items-start">
+                            <label for="name" class="col">altura kardex cedula DS4924:</label>
+                            <input type="text" id="alt_cedulanueva" name="alt_cedulanueva" class="col form-control mb-2"/>
+                        </div>
+                        <div class="row align-items-start">
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                                <input type="submit" value="Generar Kardex" class="btn btn-primary">
+                            </div>
+                        </div>
+                    </div>
+    
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
